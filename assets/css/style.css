@@ -1,0 +1,332 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main {
+
+}
+
+#header {
+    background-color: rgb(255, 255, 255);
+    height: 52px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 1px 1px 5px rgb(26, 26, 26);
+    
+    
+}
+
+.header-logo {
+    width: 36px;
+    margin: 8px 16px;
+    
+}
+
+.header-desc {
+    color: #000000;
+    display: inline-block;
+    line-height: 52px;
+    position: absolute;
+    
+}
+
+.header-search {
+    float: right;
+    border-radius: 20px;
+    border: 2px solid rgb(232, 232, 232);
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 300px;
+    margin: 10px 30px;
+    transition: border-color .2s ease-in-out;
+    
+}
+.header-search:focus-within {
+    border-color: #444;
+}
+.ti-search {
+    color: rgb(196, 196, 196);
+    margin: 8px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    line-height: 28px;
+    width: 230px;
+    
+
+}
+
+
+
+#slider {
+    margin-top: 100px;
+    display: block;
+    
+}
+
+#slider h1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+   
+}
+
+#slider h3 {
+    width: 100%;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.content .team {
+    width: 80%;
+}
+
+.team-header {
+
+}
+
+.team-list {
+    
+}
+
+.team-list-item {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 340px;
+    float: left;
+    margin: 32px 4px;
+    cursor: pointer;
+    
+    
+    
+}
+
+.item-container {
+    position: absolute;
+    width: 100%;
+    
+    top: 4px;
+    
+}
+
+.item-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px #0000001a;
+    border-radius: 16px 16px 16px 16px;
+}
+
+.team .img {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+    overflow: hidden;
+    
+}
+
+.team img {
+    width: 100%;
+    height: 100%;
+}
+
+#content .item-content {
+    width: 100%;
+    background: #00000008;
+    border-radius:  0 0 16px 16px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: -4px;
+    padding-bottom: 16px;
+}
+
+#content .item-content-chill {
+    
+    margin: 12px;
+    font-size: 16px;
+    
+}
+
+.team .name {
+    font-weight: bold;
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.team .date, 
+.team .chuc-vu, 
+.team .country {
+    margin: 8px 0;
+    display: flex;
+    justify-content: center;
+}                            
+
+#footer {
+
+}
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.3);
+    align-items: center;
+    justify-content: center;
+    /* display: flex; */
+    display: none;
+    animation: modalfadein ease 0.3s;
+}
+
+.modal.open {
+    display: flex; 
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 1500px;
+    min-height: 200px;
+    position: relative;
+    max-width: 90%;
+}
+
+
+
+.modal-header {
+    height: 72px;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 4px;
+
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    cursor: pointer;
+    color: #fff;
+
+    
+}
+
+.modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
+.modal-body {
+    margin: 16px 0;
+}
+
+.body-content {
+    padding: 16px 32px;
+    
+}
+
+.pesonal-img {
+    width: 30%;
+    float: left;
+    padding: 16px 32px;
+}
+
+.pesonal-img img{
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px #000;
+
+    
+}
+
+
+.pesonal-inf {
+    width: 35%;
+    float: left;
+    padding: 16px 16px 16px 32px;
+    
+}
+
+.pesonal-inf p {
+    margin-top: 12px;
+}
+
+.contact-inf {
+    width: 35%;
+    float: left;
+    padding: 16px;
+}
+
+.contact-inf p {
+    margin-top: 12px;
+}
+
+#contact {
+    margin: 32px 0 8px 0;
+}
+
+.contact-inf a {
+    padding: 4px;
+    margin: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-inf i {
+    font-size: 20px;   
+}
+
+.contact-inf img {
+    width: 20px;
+}
+
+
+
+
+
+
+
+@keyframes modalfadein {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
