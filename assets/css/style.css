@@ -99,8 +99,8 @@ html{
     margin-top: 32px;
 }
 
-.content .team {
-    width: 80%;
+#content .team {
+    width: 85%;
 }
 
 .team-header {
@@ -180,6 +180,7 @@ html{
     margin: 8px 0;
     display: flex;
     justify-content: center;
+    text-align: center;
 }                            
 
 #footer {
@@ -308,6 +309,11 @@ html{
 
 .contact-inf img {
     width: 20px;
+}
+
+.contact-inf .p2 {
+    margin-top: 8px;
+    font-size: 14px;
 }
 
 
